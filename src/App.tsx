@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/menu_list/Menu"; // ตัวอย่าง component ที่จะไป
 import MenuList from "./pages/MenuList";
-import "./app.css";
+import "./App.css";
 import MenuLoading from "./pages/MenuLoading";
 
 function App() {
