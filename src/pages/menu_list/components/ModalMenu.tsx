@@ -1,4 +1,4 @@
-import { Modal, Button } from "antd";
+import { Modal} from "antd";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function MenuModal({ isOpen, setIsOpen, selectedItem }: any) {

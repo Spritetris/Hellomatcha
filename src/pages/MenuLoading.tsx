@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BackHome from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
-import { Button } from "antd";
+
 import { HeartFilled, HeartOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
-import MenuModal from "./menu_list/components/ModalMenu";
+
 import { TypingText } from "../components/TyipingText";
 
 export const fadeInLeft = {

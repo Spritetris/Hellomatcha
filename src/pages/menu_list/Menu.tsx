@@ -1,18 +1,17 @@
 import { Button, Col, Row } from "antd";
 import { useState } from "react";
-import { motion, useScroll } from "motion/react";
+import { motion} from "motion/react";
 import { DownCircleOutlined, UpCircleFilled } from "@ant-design/icons";
 import BackHome from "../../components/Navbar";
 import { useLocation } from "react-router-dom";
 import { fadeInLeft } from "../MenuList";
-import MenuModal from "./components/ModalMenu";
+
 
 function Menu() {
   const location = useLocation();
   const { menu } = location.state || {};
   const [expanded, setExpanded] = useState<any>({});
-  const { scrollYProgress } = useScroll();
-  const [isOpen, setIsOpen] = useState(false);
+  
   const [selectedItem, setSelectedItem] = useState(null); // Track selected item for modal
 
   const toggleExpand = (index: any) => {
@@ -20,6 +19,7 @@ function Menu() {
       ...prev,
       [index]: !prev[index],
     }));
+    console.log(selectedItem)
   };
 
   return (
