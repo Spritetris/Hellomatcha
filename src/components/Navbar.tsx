@@ -13,7 +13,7 @@ function BackHome() {
 
   return (
     <div style={{ width: "100%", display: "flex", justifyContent: "end" }}>
-      {location.pathname !== "/menu_list" && (
+      {location.pathname == "/menu" && (
         <a
           style={{
             cursor: "pointer",

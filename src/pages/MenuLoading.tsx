@@ -35,7 +35,7 @@ function MenuLoading() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setShowButton(true);
-    }, 4000);
+    }, 3000);
 
     return () => clearTimeout(delay);
   }, []);
@@ -69,8 +69,9 @@ function MenuLoading() {
       taste: "Vegetal, Seaweed, Slightly nutty, Creamy, Umami, Full-bodies ",
       taste_th:
         "โทนเขียวสาหร่าย  มีความถั่ว, สโมคและอูมามิเบาๆ บอดี้แน่นและมีกลิ่นหอมหวานครีมมี่ จะมีความขมฝาดหน่อยๆเค็มปลาย",
-      price: "160",
+      price: "140",
       brand: "Yamamasa Koyamaen",
+      cost: "35/g",
     },
     {
       name: "Hikari",
@@ -78,7 +79,7 @@ function MenuLoading() {
       taste: "Rich Aroma, Buttery, Fresh Floral ",
       taste_th:
         "ละมุน ครีมมี่ อุมามิ มีกลิ่นดอกไม้เบาๆ ปิดท้ายด้วยความเฮเซลนัทอบอวลในปาก ไม่ขมฝาด",
-      price: "170",
+      price: "160",
     },
   ];
 
@@ -118,16 +119,6 @@ function MenuLoading() {
       cost: "20/g",
     },
     {
-      name: "Ogurayama",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Vegetal, Seaweed, Slightly nutty, Creamy, Umami, Full-bodies ",
-      taste_th:
-        "โทนเขียวสาหร่าย  มีความถั่ว, สโมคและอูมามิเบาๆ บอดี้แน่นและมีกลิ่นหอมหวานครีมมี่ จะมีความขมฝาดหน่อยๆเค็มปลาย ชงกับนมอร่อย",
-      price: "220",
-      brand: "Yamamasa Koyamaen",
-      cost: "35/g",
-    },
-    {
       name: "Ryo no kage",
       origin: "Uji, Kyoto, Japan",
       taste: "Soft, light, Refreshing, Creamy ",
@@ -158,7 +149,7 @@ function MenuLoading() {
       name: "Matcha Latte",
       price: "115",
       grade: "Ceremonial Grade",
-      remark: " *oat or pistachio milk +20",
+      remark: " *oat or pistachio milk +10",
       sub_menu: latteMenu,
     },
     {
