@@ -3,6 +3,7 @@ import BackHome from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 import { motion } from "framer-motion";
+import { Menu } from "./MenuLoading";
 
 export const fadeInLeft = {
   initial: {
@@ -28,145 +29,7 @@ function MenuList() {
     navigate("/menu", { state: { menu } });
   };
 
-  const ClearMenu = [
-    {
-      name: "TMS Y01",
-      origin: "Yame, Fukuoka, Japan",
-      taste: "Hazelnut, Roasted, Smoky",
-      taste_th: "หอมถั่ว หอมข้าวคั่ว ไม่ขมฝาด",
-      price: "115",
-    },
-    {
-      name: "Haku Yame",
-      origin: "Yame, Fukuoka, Japan",
-      taste: "Roasted Nutty, Smoky, Aroma",
-      taste_th: "หอมถั่วคั่ว กลิ่นสโมคชัด ครีมมี่ สดชื่น ไม่ขมฝาด",
-      price: "115",
-    },
-    {
-      name: "Uji Heritage",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Pistachio, Edamame, Seaweed ",
-      taste_th:
-        "กลิ่นโทนเขียวสดชื่นปนถั่ว มีกลิ่นสาหร่ายบางๆและความเค็มอ่อนๆ อูมามิมาก ไม่ขมฝาด",
-      price: "120",
-    },
-    {
-      name: "Ogurayama",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Vegetal, Seaweed, Slightly nutty, Creamy, Umami, Full-bodies ",
-      taste_th:
-        "โทนเขียวสาหร่าย  มีความถั่ว, สโมคและอูมามิเบาๆ บอดี้แน่นและมีกลิ่นหอมหวานครีมมี่ จะมีความขมฝาดหน่อยๆเค็มปลาย",
-      price: "160",
-      brand: "Yamamasa Koyamaen",
-    },
-    {
-      name: "Hikari",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Rich Aroma, Buttery, Fresh Floral ",
-      taste_th:
-        "ละมุน ครีมมี่ อุมามิ มีกลิ่นดอกไม้เบาๆ ปิดท้ายด้วยความเฮเซลนัทอบอวลในปาก ไม่ขมฝาด",
-      price: "170",
-    },
-  ];
 
-  const CocoMenu = [
-    {
-      name: "Coconut matcha",
-      origin: "",
-      taste: "",
-      taste_th:
-        "มัทฉะชงกับน้ำมะพร้าวน้ำหอม ไม่ใส่น้ำตาล ได้ความหวานจากน้ำมะพร้าว หอมมะพร้าวและยังมีรสชาติของมัทฉะ สดชื่น นัวๆเข้ากันมาก",
-      price: "120",
-    },
-    {
-      name: "Coconut milk matcha",
-      origin: "",
-      taste: "",
-      taste_th:
-        "มัทฉะตีกับนม ผสมน้ำมะพร้าวน้ำหอม หอมมะพร้าวและได้ความนัวจากนมมากขึ้น",
-      price: "130",
-    },
-  ];
-  const latteMenu = [
-    {
-      name: "Yame 01",
-      origin: "Yame, Fukuoka, Japan",
-      taste: "Hazelnut, Roasted, Smoky",
-      taste_th: "หอมถั่ว หอมข้าวคั่ว สโมคกี้เบาๆ",
-      price: "135",
-      milk: "oat/pistchio +20 milk +10",
-      cost: "19/g",
-    },
-    {
-      name: "Uji Heritage",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Pistachio, Edamame, Seaweed ",
-      taste_th:
-        "กลิ่นโทนเขียวสดชื่นปนถั่ว มีกลิ่นสาหร่ายบางๆและความเค็มอ่อนๆ ชงกับนมจะได้ความละมุน อูมามิ ไม่ถูกกลิ่นนมกลบรสชาติของมัทฉะ",
-      price: "145",
-      cost: "20/g",
-    },
-    {
-      name: "Ogurayama",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Vegetal, Seaweed, Slightly nutty, Creamy, Umami, Full-bodies ",
-      taste_th:
-        "โทนเขียวสาหร่าย  มีความถั่ว, สโมคและอูมามิเบาๆ บอดี้แน่นและมีกลิ่นหอมหวานครีมมี่ จะมีความขมฝาดหน่อยๆเค็มปลาย ชงกับนมอร่อย",
-      price: "220",
-      brand: "Yamamasa Koyamaen",
-      cost: "35/g",
-    },
-    {
-      name: "Ryo no kage",
-      origin: "Uji, Kyoto, Japan",
-      taste: "Soft, light, Refreshing, Creamy ",
-      taste_th: "ดื่มง่าย ไม่ออกโทนสาหร่าย นุ่มนวล สดชื่น ถั่วเล็กน้อย",
-      price: "145",
-      brand: "Yamamasa Koyamaen",
-      cost: "20/g",
-    },
-  ];
-  const HoneyLemonMenu = [
-    {
-      name: "Honey lemon matcha",
-      origin: "",
-      taste: "",
-      taste_th:
-        "มัทฉะชงกับน้ำแร่ ใส่ไซรัปเลม่อนน้ำผึ้งป่าแท้ 100% ไม่ใส่น้ำตาล ได้ความหวานจากน้ำผึ้งแท้ เหมาะสำหรับคนที่ต้องการความสดชื่นนน",
-      price: "120",
-    },
-  ];
-  const Menu = [
-    {
-      name: "Clear Matcha",
-      price: "115",
-      grade: "Ceremonial Grade",
-      remark: " *Only water No syrup",
-      sub_menu: ClearMenu,
-    },
-    {
-      name: "Matcha Latte",
-      price: "115",
-      grade: "Ceremonial Grade",
-      remark: " *oat or pistachio milk +20",
-      sub_menu: latteMenu,
-    },
-    {
-      name: "Coconut Matcha",
-      price: "115",
-      grade: "Ceremonial Grade",
-      remark: "",
-      sub_menu: CocoMenu,
-    },
-    {
-      name: "Honey lemon matcha",
-      price: "115",
-      grade: "Ceremonial Grade",
-      remark: " *Homemade honey lemon syrup No sugar",
-      sub_menu: HoneyLemonMenu,
-    },
-  ];
   return (
     <div>
       <BackHome />
