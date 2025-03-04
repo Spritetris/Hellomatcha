@@ -246,10 +246,19 @@ export const CocoMenu = [
 ];
 export const latteMenu = [
   {
+    name: "Wakatake (Marukyu)",
+    origin: "Uji, Kyoto, Japan",
+    taste: "Seaweed, Umami, Astringency",
+    taste_th: "โทนสาหร่าย อร่อยนัว ตัวนี้เป็นเกรดculinary ของแบรนด์ เหมาะกับการชงนม ละมุนนัวๆและมีความขมฝาดปลายๆเล็กน้อย เหมาะสำหรับคนที่ชอบมัทฉะลาเต้เข้มๆ",
+    price: "80",
+    milk: "oat/pistchio +20 milk +10",
+    cost: "9/g",
+  },
+  {
     name: "Yame 01",
     origin: "Yame, Fukuoka, Japan",
     taste: "Hazelnut, Roasted, Smoky",
-    taste_th: "หอมถั่ว หอมข้าวคั่ว สโมคกี้เบาๆ",
+    taste_th: "หอมถั่ววว หอมข้าวคั่ว สโมคกี้เบาๆ",
     price: "135",
     milk: "oat/pistchio +20 milk +10",
     cost: "19/g",
@@ -293,7 +302,7 @@ export const Menu = [
   {
     name: "Matcha Latte",
     price: "115",
-    grade: "Ceremonial Grade",
+    grade: "",
     remark: " *oat or pistachio milk +10",
     sub_menu: latteMenu,
   },

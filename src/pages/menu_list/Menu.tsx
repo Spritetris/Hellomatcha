@@ -16,7 +16,7 @@ function Menu() {
 
   const toggleExpand = (index: any) => {
     setExpanded((prev: any) => ({
-      ...prev,
+     
       [index]: !prev[index],
     }));
     console.log(selectedItem)
@@ -96,7 +96,8 @@ function Menu() {
                 key={index}
                 style={{
                   fontFamily: "Kanit, serif",
-                  background: expanded[index] ? "#fff" : "#fff",
+                  backgroundColor: expanded[index] ? "#fffafc" : "#fff",
+                  
                   padding: 10,
                   margin: 5,
                   borderRadius: 5,
@@ -105,7 +106,7 @@ function Menu() {
                   width: "100%",
                   color: expanded[index] ? "#93b48a" : "#93b48a",
                   textAlign: "left",
-                  border: "none",
+                  border:expanded[index] ?"3px solid #f48ebc": "none",
                 }}
                 onClick={() => {
                   setSelectedItem(list);
