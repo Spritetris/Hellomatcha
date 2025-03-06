@@ -106,7 +106,7 @@ function Menu() {
                   width: "100%",
                   color: expanded[index] ? "#93b48a" : "#93b48a",
                   textAlign: "left",
-                  border:expanded[index] ?"3px solid #f48ebc": "none",
+                  border:expanded[index] ?"2px solid #f48ebc": "none",
                 }}
                 onClick={() => {
                   setSelectedItem(list);

@@ -40,7 +40,6 @@ function MenuLoading() {
     return () => clearTimeout(delay);
   }, []);
 
-
   return (
     <div>
       <BackHome />
@@ -219,12 +218,28 @@ export const ClearMenu = [
     cost: "35/g",
   },
   {
+    name: "Ippodo Ummon",
+    origin: "Uji, Kyoto, Japan",
+    taste: "Rich, Robust",
+    taste_th:
+      "บอดี้แน่น มีความเข้มข้น รสชาติกลมกล่อม อูมามิ หวานหอม ครีมมี่ปลายลิ้น ดื่มง่าย",
+    price: "150",
+  },
+  {
     name: "Hikari",
     origin: "Uji, Kyoto, Japan",
     taste: "Rich Aroma, Buttery, Fresh Floral ",
     taste_th:
       "ละมุน ครีมมี่ อุมามิ มีกลิ่นดอกไม้เบาๆ ปิดท้ายด้วยความเฮเซลนัทอบอวลในปาก ไม่ขมฝาด",
     price: "160",
+  },
+  {
+    name: "Ike no shiro",
+    origin: "Yame, Fukuoka, Japan",
+    taste: "Nutty, Creamy, Dark chocolate, Vanilla, Smoky",
+    taste_th:
+      "แบรนด์ Hoshino โทนถั่ววว หอมถั่วหอมสโมค ครีมมี่ นัวๆมันๆ อูมามิ มีความดาร์คช็อกปลายๆ",
+    price: "180",
   },
 ];
 
@@ -233,14 +248,16 @@ export const CocoMenu = [
     name: "Coconut matcha",
     origin: "",
     taste: "",
-    taste_th: "มัทฉะชงกับน้ำมะพร้าวน้ำหอม ไม่ใส่น้ำตาล ได้ความหวานจากน้ำมะพร้าว หอมมะพร้าวและยังมีรสชาติของมัทฉะ สดชื่น นัวๆเข้ากันมาก",
+    taste_th:
+      "มัทฉะชงกับน้ำมะพร้าวน้ำหอม ไม่ใส่น้ำตาล ได้ความหวานจากน้ำมะพร้าว หอมมะพร้าวและยังมีรสชาติของมัทฉะ สดชื่น นัวๆเข้ากันมาก",
     price: "120",
   },
   {
     name: "Coconut milk matcha",
     origin: "",
     taste: "",
-    taste_th: "มัทฉะตีกับนม ผสมน้ำมะพร้าวน้ำหอม หอมมะพร้าวและได้ความนัวจากนมมากขึ้น",
+    taste_th:
+      "มัทฉะตีกับนม ผสมน้ำมะพร้าวน้ำหอม หอมมะพร้าวและได้ความนัวจากนมมากขึ้น",
     price: "130",
   },
 ];
@@ -249,7 +266,8 @@ export const latteMenu = [
     name: "Wakatake (Marukyu)",
     origin: "Uji, Kyoto, Japan",
     taste: "Seaweed, Umami, Astringency",
-    taste_th: "โทนสาหร่าย อร่อยนัว ตัวนี้เป็นเกรดculinary ของแบรนด์ เหมาะกับการชงนม ละมุนนัวๆและมีความขมฝาดปลายๆเล็กน้อย เหมาะสำหรับคนที่ชอบมัทฉะลาเต้เข้มๆ",
+    taste_th:
+      "โทนสาหร่าย อร่อยนัว ตัวนี้เป็นเกรดculinary ของแบรนด์ เหมาะกับการชงนม ละมุนนัวๆและมีความขมฝาดปลายๆเล็กน้อย เหมาะสำหรับคนที่ชอบมัทฉะลาเต้เข้มๆ",
     price: "80",
     milk: "oat/pistchio +20 milk +10",
     cost: "9/g",
@@ -281,13 +299,22 @@ export const latteMenu = [
     brand: "Yamamasa Koyamaen",
     cost: "20/g",
   },
+  {
+    name: "Ippodo Ummon",
+    origin: "Uji, Kyoto, Japan",
+    taste: "Rich, Robust",
+    taste_th:
+      "บอดี้แน่น มีความเข้มข้น รสชาติกลมกล่อม อูมามิ หวานหอม ครีมมี่ปลายลิ้น ดื่มง่าย",
+    price: "195",
+  },
 ];
 export const HoneyLemonMenu = [
   {
     name: "Honey lemon matcha",
     origin: "",
     taste: "",
-    taste_th: "มัทฉะชงกับน้ำแร่ ใส่ไซรัปเลม่อนน้ำผึ้งป่าแท้100% ไม่ใส่น้ำตาล ได้ความหวานจากน้ำผึ้งแท้ ให้รสชาติเปรี้ยวหวาน เหมาะสำหรับคนที่ต้องการความสดชื่นนน",
+    taste_th:
+      "มัทฉะชงกับน้ำแร่ ใส่ไซรัปเลม่อนน้ำผึ้งป่าแท้100% ไม่ใส่น้ำตาล ได้ความหวานจากน้ำผึ้งแท้ ให้รสชาติเปรี้ยวหวาน เหมาะสำหรับคนที่ต้องการความสดชื่นนน",
     price: "120",
   },
 ];
